@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#17152c" />
+  <title>Ever After, Elsewhere — an otome story</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="features.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="wordmark" href="#" aria-label="Ever After, Elsewhere home"><span class="brand-mark">✦</span><span>EVER AFTER <i>ELSEWHERE</i></span></a>
+      <div class="top-meta"><span class="save-status"><span class="status-dot"></span> YOUR STORY, YOURS ALONE</span><button class="sound-button" id="sound-toggle" aria-label="Toggle character voices" aria-pressed="false" title="Character voices are off">♫ <span>OFF</span></button></div>
+    </header>
+    <nav class="game-nav" aria-label="Game navigation">
+      <button type="button" data-screen="home">Home</button>
+      <button type="button" data-screen="phone">Phone <span>✉</span></button>
+      <button type="button" data-screen="photoshoot">Photo studio <span>✦</span></button>
+      <button type="button" data-screen="story">Story</button>
+    </nav>
+    <main id="game" class="game-layout">
+      <section class="stage" id="stage" aria-label="Story scene">
+        <div class="sky-glow"></div><div class="moon"></div><div class="scene-stars" aria-hidden="true"></div>
+        <div class="scene-label"><span class="chapter-symbol">✧</span><span id="scene-location">THE BETWEEN</span><span class="scene-line"></span><span id="scene-time">A NEW BEGINNING</span></div>
+        <div class="scene-art" id="scene-art"></div>
+        <div class="stage-caption" id="stage-caption"><span>AN ORIGINAL INTERACTIVE ROMANCE</span><strong>Somewhere between<br>who you were and who<br>you might become.</strong></div>
+        <div class="scene-vignette"></div>
+        <div class="stage-footer"><span>✦ &nbsp; A STORY THAT BECOMES YOURS</span><span id="visual-style">VISUAL NOVEL</span></div>
+      </section>
+      <section class="play-panel" id="play-panel">
+        <div class="panel-scroll" id="panel-scroll"></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span>EVER AFTER, ELSEWHERE</span><span>✦ &nbsp; A little magic. A lot of choices.</span><span>CHOOSE YOUR OWN FOREVER</span></footer>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="game.js"></script>
+</body>
+</html>
